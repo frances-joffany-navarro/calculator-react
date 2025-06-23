@@ -1,12 +1,17 @@
-# React + Vite
+# React Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a 4 days into making, starting from 23 June 2025 to 27 June 2025.
 
-Currently, two official plugins are available:
+## Live Demo
+Soon...
+## Timeline
+- **23 June** : Project Creation and Planning 
+- **24 June** : 
+- **25 June** : 
+- **26 June** : 
+- **27 June** : 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Credits
+- [https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-introduction/](https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-introduction/)
+- [https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-structure/](https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-structure/)
+- [https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-styling/](https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-styling/)
