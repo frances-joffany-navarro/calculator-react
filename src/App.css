@@ -2,7 +2,7 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  text-align: right;
 }
 
 .logo {
@@ -17,26 +17,62 @@
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculator {
+  background-color: #282c34;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.calculator-button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.output-screen {
+  background-color: #20232a;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.5em;
+  margin-bottom: 20px;
 }
 
-.card {
-  padding: 2em;
+.button-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
 }
-
-.read-the-docs {
-  color: #888;
+.button-row button {
+  margin: 0 5px;
+  flex: 1;
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #61dafb;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.button-row button:hover {
+  background-color: #21a1f1;
+}
+.button-row button:active {
+  background-color: #1e90ff;
+}
+.button-row button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.button-row button:disabled:hover {
+  background-color: #ccc;
+}
+.button-row button:disabled:active {
+  background-color: #ccc;
 }
