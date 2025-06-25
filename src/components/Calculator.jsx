@@ -35,7 +35,7 @@ export default function Calculator() {
       setInput(input.slice(0, -1));
     } else {
       //check if new input is valid
-      // the first input cannot be an oerator
+      // the first input cannot be an operator
       // no consecutive operators allowed
       // no operator at the end of the input
 
