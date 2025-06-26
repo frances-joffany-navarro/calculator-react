@@ -76,3 +76,16 @@
 .button-row button:disabled:active {
   background-color: #ccc;
 }
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  background-color: rgba(0, 0, 0, 0.0);
+  color: #fff;
+  text-align: right;
+  border: #20232a solid 1px;
+}
+input:focus {
+  outline: none;
+}

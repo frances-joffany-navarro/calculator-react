@@ -15,8 +15,8 @@ function Button({ value, handleInput }) {
 function OutputScreen({ input, result }) {
   return (
     <div className="output-screen">
-      <p>{input}</p>
-      <p className="result">{result}</p>
+      <input type="text" value={input} readOnly />
+      <input type="text" value={result} readOnly />
     </div>
   );
 }
@@ -25,31 +25,40 @@ export default function Calculator() {
   const [input, setInput] = useState('');
   const [result, setResult] = useState('');
 
+  function handleEvalutaion(value) {
+    const lastChar = input.slice(-1);
+    if (input === '' && ['+', '-', '*', '/'].includes(value) && input.slice(-1) !== '.') {
+      return false; // do not allow operator as first input
+    } else if (['+', '-', '*', '/'].includes(lastChar) && ['+', '-', '*', '/'].includes(value)) {
+      return false; // do not allow consecutive operators
+    } else if (lastChar === '.' && ['+', '-', '*', '/'].includes(value)) {
+      return false; // do not allow operator after decimal point
+    } else if (lastChar === '.' && value === '.') {
+      return false; // do not allow consecutive decimal points
+    } else if (['+', '-', '*', '/'].includes(lastChar) && value === '.') {
+      setInput(input + "0."); // add a zero before decimal point if last character is an operator
+      return true;
+    } else if (value === '.' && input === '') {
+      setInput('0.'); // start with zero if decimal point is the first input
+      return true;
+    } else {
+      setInput(input + value);
+      return true;
+    }
+  }
+
   function handleInput(value) {
     if (value === '=') {
-      console.log('Calculating result for:', parseFloat(input));
+      setResult(eval(input));
+      console.log(input);
     } else if (value === 'Clear') {
       setInput('');
       setResult('');
     } else if (value === 'Delete') {
       setInput(input.slice(0, -1));
+      setResult('');
     } else {
-      //check if new input is valid
-      // the first input cannot be an operator
-      // no consecutive operators allowed
-      // no operator at the end of the input
-
-      const lastChar = input.slice(-1);
-      if (input === '' && ['+', '-', '*', '/'].includes(value) && input.slice(-1) !== '.') {
-        return; // do not allow operator as first input
-      } else if (['+', '-', '*', '/'].includes(lastChar) && ['+', '-', '*', '/'].includes(value)) {
-        return; // do not allow consecutive operators
-      } else if (lastChar === '.' && ['+', '-', '*', '/'].includes(value)) {
-        return; // do not allow operator after decimal point
-      }
-      else {
-        setInput(input + value);
-      }
+      handleEvalutaion(value);
     }
   }
 
