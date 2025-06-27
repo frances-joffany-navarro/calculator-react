@@ -15,8 +15,8 @@ function Button({ value, handleInput }) {
 function OutputScreen({ input, result }) {
   return (
     <div className="output-screen">
-      <input type="text" value={input} readOnly />
-      <input type="text" value={result} readOnly />
+      <input type="text" value={input} onChange={(e) => { e.target.value }} readOnly />
+      <input type="text" value={result} onChange={(e) => { e.target.value }} readOnly />
     </div>
   );
 }
@@ -49,8 +49,16 @@ export default function Calculator() {
 
   function handleInput(value) {
     if (value === '=') {
-      setResult(eval(input));
-      console.log(input);
+      const lastChar = input.slice(-1);
+      console.log(['+', '-', '*', '/'].includes(lastChar));
+      if (['+', '-', '*', '/'].includes(lastChar)) {
+        return; // do not allow operator to be computed if expression is not complete
+      }
+      else {
+        setResult(eval(input));
+        console.log(input);
+      }
+
     } else if (value === 'Clear') {
       setInput('');
       setResult('');
