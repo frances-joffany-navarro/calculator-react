@@ -9,7 +9,7 @@ Soon...
 - **24 June** : Create a static version of the project
 - **25 June** : Add state and props and added functionality to the clear and delete button
 - **26 June** : Continue working on "=" button
-- **27 June** : Fix error in "=" button, update Readme file and deploy project
+- **27 June** : Fix error in "=" button, update Readme file. For the moment I will not deploy this project because of security risk in using eval() function.
 
 ## Credits
 - [https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-introduction/](https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-introduction/)
