@@ -81,7 +81,7 @@ input {
   width: 100%;
   padding: 10px;
   font-size: 1.2em;
-  background-color: rgba(0, 0, 0, 0.0);
+  background-color: rgba(0, 0, 0, 0);
   color: #fff;
   text-align: right;
   border: #20232a solid 1px;
@@ -89,3 +89,11 @@ input {
 input:focus {
   outline: none;
 }
+
+div.output {
+  font-size: 1.2em;
+  color: #fff;
+  padding: 10px;
+  height: 1.5em;
+}
+

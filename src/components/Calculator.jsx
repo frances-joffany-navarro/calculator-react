@@ -15,8 +15,8 @@ function Button({ value, handleInput }) {
 function OutputScreen({ input, result }) {
   return (
     <div className="output-screen">
-      <input type="text" value={input} onChange={(e) => { e.target.value }} readOnly />
-      <input type="text" value={result} onChange={(e) => { e.target.value }} readOnly />
+      <div className='output'>{input}</div>
+      <div className='output'>{result}</div>
     </div>
   );
 }
