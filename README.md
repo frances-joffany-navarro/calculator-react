@@ -6,10 +6,10 @@ This project is a 4 days into making, starting from 23 June 2025 to 27 June 2025
 Soon...
 ## Timeline
 - **23 June** : Project Creation and Planning 
-- **24 June** : 
-- **25 June** : 
-- **26 June** : 
-- **27 June** : 
+- **24 June** : Create a static version of the project
+- **25 June** : Add state and props and added functionality to the clear and delete button
+- **26 June** : Continue working on "=" button
+- **27 June** : Fix error in "=" button, update Readme file and deploy project
 
 ## Credits
 - [https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-introduction/](https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-introduction/)
