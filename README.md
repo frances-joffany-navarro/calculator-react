@@ -16,3 +16,4 @@ Soon...
 - [https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-introduction/](https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-introduction/)
 - [https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-structure/](https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-structure/)
 - [https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-styling/](https://www.geeksforgeeks.org/reactjs/reactjs-calculator-app-styling/)
+- [https://www.educative.io/answers/eval-vs-function-in-javascript](https://www.educative.io/answers/eval-vs-function-in-javascript)
