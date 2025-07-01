@@ -55,8 +55,8 @@ export default function Calculator() {
         return; // do not allow operator to be computed if expression is not complete
       }
       else {
-        setResult(eval(input));
-        console.log(input);
+        let newResult = Function ("return " + input);
+        setResult(newResult());
       }
 
     } else if (value === 'Clear') {
