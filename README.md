@@ -3,7 +3,7 @@
 This project is a 4 days into making, starting from 23 June 2025 to 27 June 2025.
 
 ## Live Demo
-Soon...
+(https://frances-joffany-navarro.github.io/calculator-react/)[https://frances-joffany-navarro.github.io/calculator-react/]
 ## Timeline
 - **23 June** : Project Creation and Planning 
 - **24 June** : Create a static version of the project
